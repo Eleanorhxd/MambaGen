@@ -5,7 +5,7 @@ For reproduction of medication prediction results in our paper, see instructions
 
 ## Overview
 We have modularized and encapsulated the code into a more readable form. In brief, MambaGen consists of three parts: encoder and decoder, encoder mainly gengerates the representation of patients and decoder calculates the usage probability for each drug labels.
-## Requirements
+## Prerequisites
 
 Make sure your local environment has the following installed:
 
@@ -13,15 +13,24 @@ Make sure your local environment has the following installed:
 * `numpy == 1.15.1`
 * `python >= 3.8`
 * `scikit-learn>=0.24.2`
-
+* `Torchvision`
+* `Pycocoevalcap`
 #### Datastes
 
-We provide the dataset in the [datas](datas/) folder.
+We use two publicly available radiology report generation datasets (IU X-Ray and MIMIC-CXR) in our paper.
 
-| Data      | Source | Description  |
-| -------- | ------- | ------------- |
-| MIMIC-III | [This link](https://physionet.org/content/mimiciii/1.4/) | MIMIC-III is freely-available database from 2001 to 2012, which is associated with over forty thousand patients who stayed in critical care units |
-| MIMIC-IV  | [This link](https://physionet.org/content/mimiciv/2.2/)  | MIMIC-IV is freely-available database between 2008 - 2019, which is associated with 299,712 patients who stayed in critical care units |
+For `IU X-Ray`, you can download the dataset from [here](https://openi.nlm.nih.gov/faq).
+
+For `MIMIC-CXR`, you can download the dataset from [here](https://physionet.org/content/mimic-cxr/2.0.0/).
+
+| Dataset |Type| TRAIN | VAL | TEST |
+| :------ | --------: | --------: | -----: |
+| IMAGE# | 5,226 | 748 | 1,496 |
+|IU X-ray| REPORT# | 2,770 | 395 | 790 |
+| PATIENT# | 2,770 | 395 | 790 |
+| AVG.LEN | 37.56 | 36.78 | 33.62 |
+
+After downloading the datasets, put them in the directory `data`.
 
 ## Documentation
 
@@ -49,7 +58,7 @@ We provide the dataset in the [datas](datas/) folder.
     │--pattern_records_final.pkl
 ```
 
-## How to LDENet
+## How to MambaGen
 
 ### 1 Install IDE 
 
@@ -97,7 +106,7 @@ Compared with existing methods, LDENet shows a significant advantage on several 
 
 
 ## Acknowledgement
-We sincerely thank these repositories GAMENet (https://github.com/sjy1203/GAMENet) and SafeDrug (https://github.com/ycq091044/SafeDrug) for their well-implemented pipeline upon which we build our codebase.
+We sincerely thank - [R2GenCMN](https://github.com/cuhksz-nlp/R2GenCMN).
 
 ## TODO
 
