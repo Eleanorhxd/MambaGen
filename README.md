@@ -23,21 +23,9 @@ For `IU X-Ray`, you can download the dataset from [here](https://openi.nlm.nih.g
 
 For `MIMIC-CXR`, you can download the dataset from [here](https://physionet.org/content/mimic-cxr/2.0.0/).
 
-| Dataset | Type | TRAIN | VAL | TEST |
-| :------ | :------| --------: | --------: | -----: |
-|| IMAGE# | 5,226 | 748 | 1,496 |
-|IU| REPORT# | 2,770 | 395 | 790 |
-|X-Ray| PATIENT# | 2,770 | 395 | 790 |
-|| AVG.LEN | 37.56 | 36.78 | 33.62 |
-|| IMAGE# |368,960 | 2,991 | 5,159 |
-|MIMIC| REPORT# | 222,758 | 1,808 | 3,269 |
-|-CXR| PATIENT# | 64,586 | 500 | 293 |
-|| AVG.LEN | 53 | 53.05 | 66.4 |
-
 | Dataset   |           | IU X-Ray    |           |           | MIMIC-CXR  |           |
 |-----------|-----------|-------------|-----------|-----------|------------|-----------|
-| Dataset   | TRAIN     | VAL         | TEST      | TRAIN     | VAL        | TEST      |
-| :-------- | --------: | ----------: | --------: | --------: | ---------: | --------: |
+|           | TRAIN     | VAL         | TEST      | TRAIN     | VAL        | TEST      |
 | IMAGE#    | 5,226     | 748         | 1,496     | 368,960   | 2,991      | 5,159     |
 | REPORT#   | 2,770     | 395         | 790       | 222,758   | 1,808      | 3,269     |
 | PATIENT#  | 2,770     | 395         | 790       | 64,586    | 500        | 293       |
