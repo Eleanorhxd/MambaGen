@@ -29,7 +29,14 @@ For `MIMIC-CXR`, you can download the dataset from [here](https://physionet.org/
 |IU| REPORT# | 2,770 | 395 | 790 |
 |X-Ray| PATIENT# | 2,770 | 395 | 790 |
 || AVG.LEN | 37.56 | 36.78 | 33.62 |
+|| IMAGE# |368,960 | 2,991 | 5,159 |
+|MIMIC| REPORT# | 222,758 | 1,808 | 3,269 |
+|-CXR| PATIENT# | 64,586 | 500 | 293 |
+|| AVG.LEN | 53 | 53.05 | 66.4 |
 
+| Dataset | ||   |IU X-Ray| || |||MIMIC-CXR|||
+|         | TRAIN | VAL | TEST | TRAIN | VAL | TEST |
+| :------ | :------- | :-------| :-------| :-------- | :-------- | :-------- |
 After downloading the datasets, put them in the directory `data`.
 
 ## Documentation
