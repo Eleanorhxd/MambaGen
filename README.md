@@ -23,14 +23,11 @@ For `IU X-Ray`, you can download the dataset from [here](https://openi.nlm.nih.g
 
 For `MIMIC-CXR`, you can download the dataset from [here](https://physionet.org/content/mimic-cxr/2.0.0/).
 
-| Dataset |Type| TRAIN | VAL | TEST |
-
+| Dataset | TRAIN | VAL | TEST |
+| :------ | --------: | --------: | -----: |
 | IMAGE# | 5,226 | 748 | 1,496 |
-
-|IU X-ray| REPORT# | 2,770 | 395 | 790 |
-
+| REPORT# | 2,770 | 395 | 790 |
 | PATIENT# | 2,770 | 395 | 790 |
-
 | AVG.LEN | 37.56 | 36.78 | 33.62 |
 
 After downloading the datasets, put them in the directory `data`.
