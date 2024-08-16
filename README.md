@@ -11,10 +11,10 @@ Make sure your local environment has the following installed:
 
 * `pytorch>=1.12.1 & <=1.9`
 * `numpy == 1.15.1`
-* `python >= 3.8`
-* `scikit-learn>=0.24.2`
-* `Torchvision`
-* `Pycocoevalcap`
+* `python >= 3.10`
+* `scikit-learn >= 0.24.2`
+* `torchvision == 0.8.2`
+* `causal-conv1d == 1.1.1`
 
 ## Datastes
 
@@ -77,19 +77,17 @@ Our project is built on PyCharm Community Edition ([click here to get](https://w
 We recommend using `Python 3.10` or higher as the script interpreter. [Click here to get](https://www.python.org/downloads/release/python-3110/) `Python 3.10`. 
 #### 2.2 Packages
 Please follow the packages in [Prerequisites](#prerequisites), utilize `pip install <package_name>` to construct the environment.
-### 3 Train on IU X-Ray
+### 3 Train
+Run `bash run_iu.sh` to train a model on the IU X-Ray dataset.
 
-Run `bash run_iu.sh` to train a model on the IU X-Ray data.
+Run `bash run_cxr.sh` to train a model on the MIMIC-CXR dataset.
 
-### 4 Run on MIMIC-CXR
+### 4 Test
+Run `bash test_iu.sh` to train a model on the IU X-Ray dataset.
 
-Run `bash run_mimic.sh` to train a model on the MIMIC-CXR data.
+Run `bash test_mimic.sh` to train a model on the MIMIC-CXR dataset.
 
-### 5 Test on MIMIC-CXR
-
-Run `bash test_mimic.sh` to train a model on the MIMIC-CXR data.
-
-Our experiments were done on RTX 4090 card.
+Our experiments were done on NVIDIA 4090 card.
 
 ## Acknowledgement
 We sincerely thank - [R2GenCMN](https://github.com/cuhksz-nlp/R2GenCMN).
